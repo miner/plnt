@@ -1,0 +1,585 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+    background-color: #FCFFF3;
+}
+
+div.banner {
+	background: #2AB81E;
+	background-image: url(greenerbanner_gradient.png);
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #2AB81E),
+		color-stop(0.61, #ADDB78)
+	);
+	background: -moz-linear-gradient(
+		center top,
+		#2AB81E 0%,
+		#ADDB78 61%
+	);
+	width: 100%;
+	height: 102;
+	text-shadow: #000 1px 1px 1px;
+	min-width: 480px;
+	border-bottom: 2px solid #669933;
+	border-top: 1px solid #669933;
+}
+
+div.banner h1 {
+	font-size: 36pt;
+	font-weight: normal;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-bottom: 1px;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 1px;
+}
+
+div.banner h1 span {
+	font-size: 1pt;
+}
+
+div.banner h2 {
+	font-size: 12pt;
+	font-weight: normal;
+	font-style: italic;
+	color: white;
+	margin-top: 1px;
+	padding-top: 1px;
+	padding-left: 13px;
+	padding-bottom: 1px;
+
+}
+
+div.banner h2 span {
+	font-style: normal;
+}
+
+div.banner h3 {
+	font-size: 18pt;
+	font-weight: normal;
+	color: white;
+	padding-right: 5px;
+	margin: 2px;
+	margin-top: 8px;
+	
+}
+
+div.banner h4 {
+	font-size: 12pt;
+	font-weight: normal;
+	color: white;
+	padding-right: 5px;
+	margin: 2px;
+	
+}
+
+div.banner div.section {
+	float: right;
+	text-align: right;
+	padding-top: 15px;
+}
+
+div.banner div.section a {
+	margin: 0px;
+}
+
+img.inext, img.iprev {
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+img.ihome, img.iinfo, img.igallery {
+	padding-left: 5px;
+	margin-right: 5px;
+}
+
+img.ihome {
+	margin-right: 10px;
+}
+	
+/*
+div.main {
+}
+*/
+div.label {
+	margin-bottom: 5px;
+}
+
+.fixednav {
+	position: absolute;
+	top: 125px;
+	right: 5px;
+}
+
+div.label h1, div.label h2, div.label h3 {
+	text-align: center;
+	margin: 3px;
+}
+
+div.navindex {
+	margin-top: 20px;
+	font-size: 10pt;
+}
+
+div.sideinfo {
+	float: right;
+	max-width: 250;
+	text-align: center;
+	padding-right: 10px;
+	padding-left: 5px;
+	font-size: 10pt;
+}
+
+div.sideinfo ul {
+	list-style-type: none;
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+div.ad {
+	float: right;
+	border: 2px dotted #DCD;
+	height: 600px;
+	width: 160px;
+	padding: 5px;
+}
+
+h2 {color: green;
+    font-size: 12pt;
+}
+
+h3 {color: #009900;
+    font-size: 11pt;
+    font-weight: normal;
+}
+
+h4 {color: #009900;
+    font-size: 9pt;
+    font-weight: normal;
+}
+
+span.heading {
+    color: #009900;
+    font-weight: 500;
+}
+span.shadow {
+    text-shadow: #000 1px 1px 1px;
+}
+
+ul#pcultlist, ul#pothercultlist, ul#psubtaxalist, ul#prelativeslist {
+    margin: 0px;
+    padding-left: 0px;
+    text-indent: 1em;
+}
+
+ul#pcultlist li, ul#pothercultlist li, ul#psubtaxalist li, ul#prelativeslist li {
+    list-style-type: none;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    padding-left: 1px;
+}
+	
+div.sideinfo h4 {
+	font-size: 10pt;
+	margin-bottom: 2px;
+	font-weight: normal;
+	color: #800000;
+}
+
+div.otherlinks {
+    text-align: left;
+}
+
+ul.plantlist > li {
+    list-style-type: none;
+}
+
+ul.plantlist, ul.genera, ul.othercults, ul.subtaxa {
+	font-size: 10pt;
+	padding: 0px;
+	margin: 2px;
+}
+
+ul.species {
+    padding-left: 30px;
+    margin-top: 2px;
+}
+
+ul.genera > li {
+    list-style-type: none;
+    margin-top: 5px;
+    margin-bottom: 2px;
+	border-top: thin dotted #E8E6D9;
+}
+
+ul.genera > li p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+ul.species li {
+    list-style-type: none;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+div.publications dl {
+	font-size: 10pt;
+}
+	
+div.publications dl dt {
+	margin-top: 5px;
+	padding-top: 5px;
+	border-top: thin dotted #E8E6D9 ;
+}
+
+div.authors table td { 
+	vertical-align: text-top; 
+	padding: 3px;
+}
+
+div.authors table tr:nth-child(even), div.pindex table tr:nth-child(even), div.sppl table tr:nth-child(2n+4){ 
+	background-color: #E8E6D9;
+}
+
+div.sppl table tr:nth-child(-n+2){ 
+	background-color: #EEE;
+}
+
+div.sppl table tr:nth-child(2) th { 
+	border-bottom: 2px solid gray;
+}
+
+
+div.sppl th {
+font-size: 8pt;
+}
+
+th.wsppl {
+	width: 10%;
+}
+
+div.sppl tr {
+font-size: 8pt;
+}
+
+div sppl table {
+padding-right: 1px;
+}
+
+div.authors table {
+	border-width: 0px;
+	width: 100%
+}
+
+th {
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+th, span.generaheader {
+	color: #800000;
+}
+
+div.authors table th {
+	text-align: left;
+}
+
+div.authors table tr {
+	text-align: left;
+}
+
+div.authors table th.abbrev {
+	width: 10%;
+}
+
+div.authors table th.author {
+	width: 40%;
+}
+
+div.authors table th.alternate {
+	width: 30%;
+}
+
+div.pindex, div.authors, div.publications, div.genera {
+	/* leave room for ads */
+	margin-right: 200px;
+}
+
+div.botreg table td {
+	vertical-align: top;
+	border-top: thin dotted #E8E6D9;
+	padding-top: 5px;
+}
+
+div.botreg table span.label {
+	color: #919191;
+}
+
+div.pindex table {
+	border-spacing: 1px 2px;
+	margin: auto;
+	width: 100%
+}
+	
+div.pindex table th, div.pindex table td {
+	text-align: left;
+	vertical-align: baseline;
+	padding: 2px 5px;
+	margin: 5px;
+	border: 3px;
+}
+
+div.pindex table td.wimages {
+	text-align: center;
+	vertical-align: middle;
+}
+
+div.pindex table td.latin {
+	color: #009933;
+}
+
+span.disabled {
+	color: #DDD;
+}
+
+span.genus {
+    font-style: italic;
+    color: green;
+    font-weight: bold;
+}
+
+span.heading {
+    color: #696;
+}
+
+
+div.jumpto p {
+    text-align: center;
+    margin-top: 10pt;
+    margin-bottom: 2pt;
+    color: green;
+}
+
+div.jumpto a:link {
+    color: green;
+}
+
+div.jumpto a:visited {
+    color: green;
+}
+
+div.jumpto a:hover {
+    color: red;
+}
+
+tr {
+	font-size: 10pt;
+}
+
+/* for Firefox */
+a img {border: none; }
+
+
+/* link pseudo class order must be: LVHA */
+a:link {text-decoration: none; color: #360}
+a:visited {text-decoration: none; color: #360}
+a:hover {text-decoration: none; color: #699}
+a:active {text-decoration: none; color: #c33}
+
+div.banner a:link {text-decoration: none; color: white}
+div.banner a:visited {text-decoration: none; color: white}
+div.banner a:hover {color: #699}
+div.banner a:active {color: #c33}
+
+a.xhttp:link {text-decoration: none; color: #360}
+a.xhttp:visited {text-decoration: none; color: #360}
+a.xhttp:hover {text-decoration: none ;color: #699}
+a.xhttp:active {text-decoration: none; color: #c33}
+
+a.nav:link {text-decoration: none; color: #009900}
+a.nav:visited {text-decoration: none; color: #009900}
+a.nav:hover {text-decoration: underline ;color: #699}
+a.nav:active {text-decoration: underline; color: #c33}
+
+a.plant:link, a.images:link {text-decoration: none; color: #009900}
+a.plant:visited, a.images:visited {text-decoration: none; color: #400080}
+a.plant:hover, a.images:hover {text-decoration: none ;color: #699}
+a.plant:active, a.images:active {text-decoration: none; color: #c33}
+
+div.imageframe img {
+	padding: 8px;
+	margin: 2px 10px;
+	border: 1px solid #f0f0f0;
+	border-bottom: 2px solid #ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+div.imageframe div.single {
+	float: none;
+	margin: 10px auto;
+	min-width: 700px;
+	text-align: center;
+}
+
+
+div.imageframe div {
+	float: left;
+	max-width: 300px;
+	min-height: 300px;
+	text-align: center;
+}
+
+
+div.imageframe p {
+	margin: 2px;
+	padding: 2px;
+	text-align: center;
+}
+
+.menubar {
+	border-bottom: 2px solid #669933;
+	min-width: 480px;
+}
+	
+.menubar ul {
+	margin: 1px 0px;
+	padding: 1px;
+	list-style: none;
+	text-align: left;
+	border: 0px;
+	text-indent: 0px;
+	background-color: #2AB81E;
+}
+
+.menubar ul li { 
+	display: inline;
+	white-space: nowrap;
+	background-color: light-green;
+}
+
+.menubar ul li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 0.2em 0.5em;
+}
+
+.menubar ul li a:hover {
+	color: #699;
+	background-color: yellow;
+}
+
+.menubar ul li a:active {color: #c33}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.nobull {
+	list-style: none;
+}
+
+span.label {
+	color: #800000;
+	font-style: italic;
+	font-size: 10pt;
+}
+
+
+div.text {
+	padding-left: 10px;
+	padding-right: 5px;
+	font-size: 10pt;
+}
+
+div.text p {
+	margin: 0.3em;
+}
+
+
+div.label h2 {color: green;
+	font-size: 12pt;
+	text-align: center;
+	font-weight: bold;
+}
+		
+div.label h3 {color: green;
+	font-size: 11pt;
+	text-align: center;
+	font-weight: bold;
+}
+
+hr {
+	margin: 10px 3px 3px;
+}
+
+
+p.fsources, p.fcopyright {
+	font-size: 10pt;
+	margin: 2px;
+}
+
+p.fsources {
+	float: right;
+	text-align: right;
+}
+
+p.fcopyright {
+	float: left;
+	text-align: left;
+}
+
+p.credit, p.caption {
+	font-size: 8pt;
+}
+
+div.single p.caption {
+	font-size: 10pt;
+	margin: 1px;
+}
+
+div.label a:link {text-decoration: none; color: #009900}
+div.label a:visited {text-decoration: none; color: #009900}
+div.label a:hover {text-decoration: none; color: #699}
+div.label a:active {text-decoration: none; color: #c33}
+
+
+p#pdesclabel, p#phistlabel, p#pothercultlabel, p#pcultlabel, p#prellabel, p#pexplabel, p#psubtlabel {
+	margin-bottom: 3px;
+	margin-top: 10px;
+}
+
+
+*:target {
+	border-bottom: thin dotted blue;
+}
+
+
+/* Stylin' Alsett clearing method; use clearfix class on div containing floats */
+/* See positioniseverything.com and csscreator.com */
+.clearfix:after {
+    content: ".";
+	display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}   /* a fix for IE Mac */
+
+/* next a fix for the dreaded Guillotine bug in IE6 */
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+/* end of Alsett clearing method */
+

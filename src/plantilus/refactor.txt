@@ -1,0 +1,16 @@
+Idea for refactoring massive web.clj
+web.clj  -- stays as is until refactored
+
+bento.clj  -- csv data and conversion into clojure data, make plantdb *db*
+plantdb.clj -- uses bento to build db
+datomic.clj -- converts data to datomic
+
+templates.clj  -- stuff using enlive
+webgen.clj -- running templates, generating files, publishing
+
+
+repl.clj  -- repl interaction, not for production
+sample.clj  -- sets up some sample data, probably obsolete
+
+data.clj  -- rename to resources.clj
+  stays same, root data access for project resources (files, urls, etc.)

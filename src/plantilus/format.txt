@@ -1,0 +1,25 @@
+
+;;; We'll need to walk through marked-up strings to create the correct quotes and html char
+;;; entities.
+
+;;; in formatted text:
+;;; (TM) converts to trademark symbol
+;;; (R)  converts to registered trademark symbol
+
+;;; {Italic}  can be inside other [foo: content], but no [] inside {}
+
+;;; [plant://SecretCode]  lookup name of plant for text link (also works for 4 char genus ID)
+;;; [plant://SecretCode Foobus Barbus] use stuff after space as link text
+;;; [author://AuthorCode]  similar to plant:
+;;; [pub://PubCode]  similar to plant: scrape this file
+;;;   http://plantilus.com/nomenclature/list-of-plant-publications.html
+
+;;; [cat://SecretCode]  link into Catesby Reference page
+;;; [br://SecretCode]  link into Bot Reg page
+
+;;; [http://example.com/foo/bar.html External link]
+
+;;; [xhttp://example.com/foo/bar.html External link opening in new window]
+
+;;; [quote: Simple text]  <quote>Inline quoted text</quote>
+;;; [blockquote: Simple text]  <blockquote>Block of Text</blockquote>

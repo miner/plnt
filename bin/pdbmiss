@@ -1,0 +1,19 @@
+#!/bin/sh
+date
+PDB=/Users/miner/plants/plantilus/resources/data/plantdb
+if [ ! -e $PDB ]; then echo "missing $PDB"; exit -1; fi
+cd $PDB
+
+echo "\n** Missing Plants **"
+ack -ho "MISSING \w+" | sort | uniq
+echo
+ack MISSING
+echo
+echo
+
+echo "\n** Missing GENERA **"
+ack -ho "GENERA \w+" | sort | uniq
+echo
+ack GENERA
+echo
+echo "done"
