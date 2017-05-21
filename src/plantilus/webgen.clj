@@ -627,8 +627,10 @@
     (throw (IllegalStateException. (str "Missing plantdb-dir: " plantdb-dir))))
   (when-not (fs/readable? web-plantdb-dir)
     (throw (IllegalStateException. (str "Missing web-plantdb-dir: " web-plantdb-dir))))
-  (println (str (java.util.Date.)))
-  (push-web-update plantdb-url plantdb-dir web-plantdb-dir)
+  (print "Enter $PWD$ for" plantdb-url " > ")
+  (let [pwd (read-line)]
+    (println (str (java.util.Date.)))
+    (push-web-update (str/replace plantdb-url "$PWD$" pwd) plantdb-dir web-plantdb-dir))
   (rename1 web-plantdb-dir)
   (fs/rename plantdb-dir web-plantdb-dir)
   (println (str (java.util.Date.))))
