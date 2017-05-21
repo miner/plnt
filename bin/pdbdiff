@@ -1,5 +1,5 @@
 #!/bin/sh
-PDB=~/plants/data/plantdb
+PDB=~/plants/plnt/resources/data/plantdb
 if [ ! -e $PDB ]; then echo "missing $PDB"; exit -1; fi
 cd $PDB
 ls -1Rs * >/tmp/new-pdb-report.txt
@@ -7,6 +7,6 @@ cd ../web-plantdb
 ls -1Rs * >/tmp/web-pdb-report.txt
 opendiff /tmp/web-pdb-report.txt  /tmp/new-pdb-report.txt
 
-opendiff ~/plants/data/web-plantdb/1nfo ~/plants/data/plantdb/1nfo
-opendiff ~/plants/data/web-plantdb/3ook ~/plants/data/plantdb/3ook
-#opendiff ~/plants/data/web-plantdb ~/plants/data/plantdb
+opendiff ~/plants/plnt/resources/data/web-plantdb/1nfo ~/plants/plnt/resources/data/plantdb/1nfo
+opendiff ~/plants/plnt/resources/data/web-plantdb/3ook ~/plants/plnt/resources/data/plantdb/3ook
+#opendiff ~/plants/plnt/resources/data/web-plantdb ~/plants/plnt/resources/data/plantdb

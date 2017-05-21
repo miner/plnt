@@ -1,6 +1,6 @@
 #!/bin/sh
 date
-PDB=/Users/miner/plants/plantilus/resources/data/plantdb
+PDB=/Users/miner/plants/plnt/resources/data/plantdb
 if [ ! -e $PDB ]; then echo "missing $PDB"; exit -1; fi
 cd $PDB
 

@@ -70,7 +70,7 @@
                (check-parents)
                (check-for-grex *db*))
     (println " done " (report-msecs (tmr/mean timer))))
-  (println "running sh for pdbdiff and apdbmiss")
+  (println "running sh for apdbdiff and apdbmiss")
   (clojure.java.shell/sh "/Users/miner/bin/apdbmiss")
   (clojure.java.shell/sh "/Users/miner/bin/apdbdiff")
   (println "ppc done")
