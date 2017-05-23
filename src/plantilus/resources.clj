@@ -32,6 +32,8 @@
 
 (def plants-csv-file (io/file data-dir "Plants.csv"))
 
+(def daylillies-csv-file (io/file data-dir "Daylillies.csv"))
+
 (def protea-csv-file (io/file data-dir "Protea.csv"))
 
 (def orchid-csv-file (io/file data-dir "Orchid.csv"))

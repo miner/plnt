@@ -135,6 +135,39 @@
 (def ^:const plant-keys (mapv nth1 bento-plants-descriptor))
 
 
+(def ^:const bento-daylillies-descriptor
+  [["Date Created" :date-created]
+   ["Date Modified" :date-modified]
+   ["PlantID" :id]
+   ["Genus" :genus] 
+   ["Species" :species] 
+   ["var." :var]
+   ["hybrid" :hybrid]
+   ["Cultivar" :cultivar]
+   ["Common Name" :common]
+   ["scape height (\")" :scape-height]
+   ["Status" :status]
+   ["Description:" :description]
+   ["Parentage:" :parentage]
+   ["My Experience:" :my-experience]
+   ["Sub-location" :sub-location] 
+   ["bloom size (\")" :bloom-size]
+   ["bloom season" :bloom-season] 
+   ["ploidy" :ploidy] 
+   ["bloom habit" :bloom-habit] 
+   ["Color" :color]
+   ["fragrance" :fragrance] 
+   ["foliage type" :foliage]
+   ["Registration" :registration]
+   ["bud count" :bud-count] 
+   ["form" :form] 
+   ["branches" :branches]
+   ["Location" :location]
+   ])
+
+(def ^:const bento-daylillies-header-names (mapv nth0 bento-daylillies-descriptor))
+
+(def ^:const daylilly-keys (mapv nth1 bento-daylillies-descriptor))
 
 
 (def ^:const bento-authors-descriptor
@@ -609,6 +642,9 @@
 (defn pub-record [pvec keys]
   (simple-record pvec keys))
 
+(defn daylilly-record [pvec keys]
+  (simple-record pvec keys))
+
 (defn author-record [pvec keys]
   (simple-record pvec keys))
 
@@ -679,6 +715,10 @@
        (check-headers header bento-plants-header-names fname)
        (doall (map #(transform (plant-record %1 plant-keys)) (rest lines)))))))
 
+
+(defn parse-daylillies-csv
+  [fname]
+  (parse-csv-file fname bento-daylillies-header-names daylilly-record daylilly-keys))
 
 
 (defn parse-pubs-csv
